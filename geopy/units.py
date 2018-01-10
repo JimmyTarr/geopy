@@ -61,7 +61,7 @@ def kilometers(meters=0, miles=0, feet=0, nautical=0): # pylint: disable=W0621
     if meters:
         ret += meters / 1000.
     if feet:
-        miles += feet / ft(1.)
+        ret += feet / ft(1.)
     if nautical:
         ret += nautical / nm(1.)
     ret += miles * 1.609344
